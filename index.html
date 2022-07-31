@@ -67,7 +67,6 @@
     </section>
 
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
     integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -81,10 +80,6 @@
     closeMenu.addEventListener("click", () => {
       nav.classList.remove("open-nav");
     });
-    axios.get('https://sksiamss229943.github.io/APIs/db.json')
-      .then((res) => {
-        document.querySelector('.hero h1').innerHTML = res.data[0].title;
-      })
   </script>
 
 </body>
